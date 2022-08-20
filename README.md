@@ -1,6 +1,6 @@
 # SOCCER AWARDS APP
 
-This is app is intented to be a soccer polls app, where depending of the question you are able to see some options, vote and then looks for the results.
+This app is intented to be a soccer polls app, where depending on the question you are able to see some choices, vote and then look for the results.
 
 Requirements:
 
