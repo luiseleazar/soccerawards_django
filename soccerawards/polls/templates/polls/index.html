@@ -1,12 +1,35 @@
 {% load static %}
-<link rel="stylesheet" href="{% static 'polls/style.css' %}">
 
-{% if latest_question_list %}
-    <ul>
-    {% for question in latest_question_list %}
-        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text}}</a></li>        
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No polls are available</p>
-{% endif %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'polls/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+    <title>Soccer Awards</title>
+</head>
+<body>
+    <header>
+        <h1>Soccer Awards App</h1>
+    </header>
+    <main>
+        {% if latest_question_list %}
+        <ul>
+        {% for question in latest_question_list %}
+            <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text}}</a></li>        
+        {% endfor %}
+        </ul>
+        {% else %}
+            <p>No polls are available</p>
+        {% endif %}
+    </main>
+    <footer>
+    <a href="https://github.com/luiseleazar">GitHub: @luiseleazar</a>
+    <a href="#">Want to add a question?</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms and Conditions</a>
+    </footer>
+</body>
+</html>
