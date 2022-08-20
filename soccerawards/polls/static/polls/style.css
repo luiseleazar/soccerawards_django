@@ -1,0 +1,11 @@
+body {
+    background: #4b6cb7;
+    background: linear-gradient(to right, #182848, #4b6cb7);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  li a {
+    color: #ffffff;
+    font-size: 2em;
+    text-decoration: none;
+  }
